@@ -2,9 +2,11 @@
 
 This simple project aims to demonstrate the use of a local virtual environment with Python in a text editor (VS Code) to create or connect to SQLite databases, make queries, and fetch results.
 
-To initiate the virtual environment we will need to run the commands "pipenv install" and "pipenv shell" in the root folder. Once it is initiated, we will create a new folder and paste our SQLite database, and create a new python file to make the connection (See .py file)
+To initiate the virtual environment we will need to run the commands "pipenv install", "pipenv shell", and "pipenv install pandas" in the root folder. Once it is initiated, we will create a new folder and paste our SQLite database, and create a new python file to make the connection (See .py file)
 
 The whole code is actually replicable and can be used following the given instructions.
+
+A .csv file was exported as an example from the second query's result and is included in this repository.
 
 #### Example queries:
 
