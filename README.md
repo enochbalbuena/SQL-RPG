@@ -8,15 +8,15 @@ The whole code is actually replicable and can be used following the given instru
 
 #### Example queries:
 
-'''
+
 SELECT_ALL = 'SELECT character_id, name FROM charactercreator_character;'
-'''
+
 
 (Limiting only to the first five rows)
 
 Result: [(1, 'Aliquid iste optio reiciendi'), (2, 'Optio dolorem ex a'), (3, 'Minus c'), (4, 'Sit ut repr'), (5, 'At id recusandae expl')]
 
-'''
+
 AVG_ITEM_WEIGHT_PER_CHARACTER = '''
 SELECT cc_char.name, AVG(ai.weight) AS avg_item_weight FROM charactercreator_character AS cc_char
 JOIN charactercreator_character_inventory AS cc_inv
@@ -25,7 +25,7 @@ JOIN armory_item AS ai
 ON ai.item_id = CC_inv.item_id
 GROUP BY cc_char.character_id
 '''
-'''
+
 
 Result (after turning it into a dataframe): 
                            name  average_item_weight
